@@ -27,7 +27,7 @@ const Createbook = () => {
         };
         setLoading(true);
         axios
-            .post("http://localhost:3002/books", data)
+            .post("http://localhost:3004/books", data)
             .then(() => {
                 setLoading(false);
                 navigate("/"); // navigate to the home page after success
