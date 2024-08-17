@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:3004")
+      .get("https://two-m5er.onrender.com")
       .then((response) => {
         if (response.data) {
           setBooks(response.data);

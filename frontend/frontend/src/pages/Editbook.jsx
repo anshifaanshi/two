@@ -17,7 +17,7 @@ const EditBook = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(`http://localhost:3004/books/${id}`) // Use backticks for template literals
+            .get(`https://two-m5er.onrender.com/books/${id}`) // Use backticks for template literals
             .then((response) => {
                 setTitle(response.data.title);
                 setAuthor(response.data.author);
@@ -39,7 +39,7 @@ const EditBook = () => {
         };
         setLoading(true);
         axios
-            .put(`http://localhost:3004/books/${id}`, data) // Use PUT for updating an existing resource
+            .put(`https://two-m5er.onrender.com/books/${id}`, data) // Use PUT for updating an existing resource
             .then(() => {
                 setLoading(false);
                 navigate("/"); // Use navigate to redirect

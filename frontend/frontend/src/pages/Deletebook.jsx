@@ -14,7 +14,7 @@ const DeleteBook = () => {
     const handleDelete = () => {
         setLoading(true); // Set loading to true before the request
         axios
-            .delete(`http://localhost:3004/books/${id}`) // Use backticks for template literals
+            .delete(`https://two-m5er.onrender.com/books/${id}`) // Use backticks for template literals
             .then(() => {
                 setLoading(false);
                 navigate("/"); // Redirect to the home page after deletion
