@@ -6,7 +6,7 @@ import { Book } from './models/models.js'; // Ensure this path is correct
 
 const app = express();
 const PORT = 3004;
-const URL = 'mongodb+srv://anshifajamsher:8uBbXQZT2ScTgl7F@cluster0.twfjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const URL = 'mongodb+srv://anshifajamsher:Qjsf1bTD4zpGVV0Y@cluster0.9mgo2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 app.use(express.json());
 app.use(cors());
